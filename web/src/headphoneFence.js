@@ -49,7 +49,7 @@ class HeadphoneFence {
             }
         }
         else
-            throw "Arguments not valid. First argument must be: \"during\", \"pluggingIn\" or \"unplugging\"";
+            throw "Arguments not valid. First argument must be: \"during\", \"pluggingIn\" or \"unplugging\"";  
         
     }
 }
