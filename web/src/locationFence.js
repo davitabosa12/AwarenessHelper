@@ -1,6 +1,6 @@
 class LocationFence{
     static entering(latitude, longitude, radius){
-        params = {
+        var params = {
             latitude:latitude,
             longitude: longitude,
             radius:radius
@@ -8,7 +8,7 @@ class LocationFence{
         return new AwarenessFence(Fence.Types.LOCATION,LocationFence.Methods.ENTERING,params);
     }
     static exiting(latitude, longitude, radius){
-        params = {
+        var params = {
             latitude:latitude,
             longitude: longitude,
             radius:radius
@@ -17,7 +17,7 @@ class LocationFence{
 
     }
     static in(latitude, longitude, radius, dwellTimeMillis){
-        params = {
+        var params = {
             latitude:latitude,
             longitude: longitude,
             radius:radius,

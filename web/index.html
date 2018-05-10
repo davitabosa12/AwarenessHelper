@@ -6,13 +6,31 @@
     <title>Awareness Helper</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
     <script src="src/fence.js"></script>
+    <script src="src/fenceList.js"></script>
+    <script src="src/awarenessFence.js"></script>
     <script src="src/compositeFence.js"></script>
     <script src="src/headphoneFence.js"></script>
-    <script src="src/awarenessFence.js"></script>
+    <script src="src/detectedActivity.js"></script>
+    <script src="src/locationFence.js"></script>
+    <script src="src/timeFence.js"></script>
+    <script src="src/main.js"></script>
 </head>
 <body>
-    <button id="create_fence">Cria Fence</button>
+    <div>
+        <input type="text" name="" id="fence_name" placeholder="Fence Name">
+        <select id="fence_types">
+            <option value="headphone">Headphone</option>
+            <option value="location">Location</option>
+            <option value="detected_activity">Detected Activity</option>
+            <option value="time">Time</option>
+        </select>
+        
+    </div>
+    <div id="config">
+        <div id="params">
+            
+        </div>
+    </div>
 </body>
 </html>

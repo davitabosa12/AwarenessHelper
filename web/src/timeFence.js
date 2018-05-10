@@ -70,8 +70,8 @@ class TimeFence{
 }
 
 TimeFence.Methods = Object.freeze({
-    AROUND_TIME_INSTANT = "aroundTimeInstant",
-    IN_DAILY_INTERVAL = "inDailyInterval",
+    AROUND_TIME_INSTANT: "aroundTimeInstant",
+    IN_DAILY_INTERVAL: "inDailyInterval",
     IN_INTERVAL:"inInterval",
     IN_INTERVAL_OF_DAY:"inIntervalOfDay",
     IN_TIME_INTERVAL:"inTimeInterval"
