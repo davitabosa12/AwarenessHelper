@@ -1,4 +1,4 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -6,31 +6,23 @@
     <title>Awareness Helper</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="src/fence.js"></script>
-    <script src="src/fenceList.js"></script>
-    <script src="src/awarenessFence.js"></script>
-    <script src="src/compositeFence.js"></script>
-    <script src="src/headphoneFence.js"></script>
-    <script src="src/detectedActivity.js"></script>
-    <script src="src/locationFence.js"></script>
-    <script src="src/timeFence.js"></script>
-    <script src="src/main.js"></script>
+
 </head>
 <body>
-    <div>
-        <input type="text" name="" id="fence_name" placeholder="Fence Name">
-        <select id="fence_types">
-            <option value="headphone">Headphone</option>
-            <option value="location">Location</option>
-            <option value="detected_activity">Detected Activity</option>
-            <option value="time">Time</option>
-        </select>
-        
-    </div>
-    <div id="config">
-        <div id="params">
-            
-        </div>
-    </div>
+    
+   <form method="get" id="snap_form"> <!-- SNAPSHOT SETTINGS-->
+       <label for="snap_headphone">Headphone</label>
+       <input type="checkbox" name="headphone" id="snap_headphone"><br>
+       <label for="snap_location">Location</label>
+       <input type="checkbox" name="location" id="snap_location"><br>
+       <label for="snap_detected_activity">Detected Activity</label>
+       <input type="checkbox" name="detected_activity" id="snap_detected_activity"><br>
+       <label for="snap_beacon">Beacon</label>
+       <input type="checkbox" name="beacon" id="snap_beacon"><br>
+       <label for="snap_time">Time</label>
+       <input type="checkbox" name="time" id="snap_time"><br>
+       <input type="button" id="btn_generate" value="Get JSON">
+   </form>
+   <script src="snapshot/snapshot_managing.js"></script>
 </body>
 </html>
