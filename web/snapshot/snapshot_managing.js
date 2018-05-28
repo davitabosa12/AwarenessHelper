@@ -2,13 +2,11 @@
 var elem = document.getElementById("btn_generate");
 var glo
 
-elem.addEventListener("click", generateJSON, false);
+elem.addEventListener("click", evt =>{
+    generateJSON(evt.target.form);
+}, false);
 
-function generateJSON(evt){
-    console.log("Hi");
-    
-    var form = evt.target.form;
-    
+function generateJSON(form){
     console.log(form);
 
     var resp = {
